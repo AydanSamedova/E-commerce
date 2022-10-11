@@ -32,7 +32,7 @@ export default function Categories() {
 					<span
 						key={uniqid()}
                         onClick={() => handleClick(keyword)}
-                        className='text-base font-semibold cursor-pointer'
+                        className='text-base mx-1 font-semibold cursor-pointer'
 						style={active === keyword ? {color:"rgba(255, 0, 0, 1)"} : {color:"black"}}
 					>
 						{keyword}

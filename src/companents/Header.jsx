@@ -10,7 +10,7 @@ export default function Header() {
           LOGO
         </Link>
         <div className="flex items-center ">
-          <span className="text-sm  mx-6  cursor-pointer">Mağazanı yarat</span>
+          <span className="text-sm  mx-5 cursor-pointer">Mağazanı yarat</span>
           <span className="text-sm cursor-pointer">Yardım</span>
           <div className="flex items-center text-sm mx-10">
             <img src={flag} alt="" className="w-5 h-5 mx-1" />

@@ -4,7 +4,7 @@ import Products from "./Products";
 
 export default function Main() {
   return (
-    <div className="w-full bg-[#cecece80]">
+    <div className="w-full bg-[#cecece80] z-0">
       <div className="w-[80%] m-auto">
         <div className="flex items-center justify-between py-4">
           <h2 className="text-lg font-semibold">Koton</h2>
@@ -17,10 +17,9 @@ export default function Main() {
           </div>
         </div>
         <ProductsFilterInfo />
-        <div className="flex">
+        <div className="flex my-3">
           <Filter />
-
-          <Products />
+          <Products className="z-10" />
         </div>
       </div>
     </div>

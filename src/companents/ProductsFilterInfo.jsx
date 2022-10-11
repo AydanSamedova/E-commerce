@@ -18,7 +18,7 @@ export default function ProductsFilterInfo() {
             <div
               key={uniqid()}
               onClick={() => setActive(keyword)}
-              className="info border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] "
+              className=" border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] "
               style={
                 active === keyword
                   ? { borderColor: "rgba(255, 0, 0, 1)" }
