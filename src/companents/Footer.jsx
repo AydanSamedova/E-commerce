@@ -7,29 +7,29 @@ export default function Footer() {
         <div className="w-1/6">
           <h2 className="text-lg font-semibold mb-5">Biz Kimiz</h2>
           <ul>
-            <li className="text-sm font-normal">Hakkimizda</li>
+            <li className="text-sm font-normal">Hakkımızda</li>
             <li className="text-sm my-6 font-normal">Kariyer</li>
-            <li className="text-sm my-6 font-normal">Iletisim</li>
-            <li className="text-sm font-normal">Bizde satis yap</li>
+            <li className="text-sm my-6 font-normal">Iletişim</li>
+            <li className="text-sm font-normal">Bizde satış yap</li>
           </ul>
         </div>
         <div className="w-1/6">
-          <h2 className="text-lg font-semibold  mb-5">Yardim</h2>
+          <h2 className="text-lg font-semibold  mb-5">Yardım</h2>
           <ul>
-            <li className="text-sm font-normal">Skca sorulan sorular</li>
-            <li className="text-sm my-6 font-normal">Canli yardim</li>
-            <li className="text-sm my-6 font-normal">Nasil iade ederim</li>
-            <li className="text-sm font-normal">Nasil siparis verilir</li>
+            <li className="text-sm font-normal">Sıkca sorulan sorular</li>
+            <li className="text-sm my-6 font-normal">Canlı yardım</li>
+            <li className="text-sm my-6 font-normal">Nasıl iade ederim</li>
+            <li className="text-sm font-normal">Nasıl sipariş verilir</li>
           </ul>
         </div>
 
         <div className="w-1/6">
           <h2 className="text-lg font-semibold  mb-5">Kampanyalar</h2>
           <ul>
-            <li className="text-sm  font-normal">Ozel kampanyalar</li>
-            <li className="text-sm my-6 font-normal">Bayram kampanyalari</li>
+            <li className="text-sm  font-normal">Özel kampanyalar</li>
+            <li className="text-sm my-6 font-normal">Bayram kampanyaları</li>
             <li className="text-sm my-6 font-normal">Aktiv Kampanyalar</li>
-            <li className="text-sm font-normal">VIP uyelik</li>
+            <li className="text-sm font-normal">VIP üyelik</li>
           </ul>
         </div>
         <div className="w-1/6">
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="w-2/6">
           <h2 className="text-lg font-semibold  mb-3">
-            Indirimler ve yenilikler icin abone olun
+            İndirimler ve yenilikler için abone olun
           </h2>
           <div className="flex">
             <input

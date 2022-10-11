@@ -5,9 +5,9 @@ export default function Copyright() {
   return (
     <div className="w-full bg-[#221F23] text-white">
         <div className="flex justify-between container items-center px-24 py-4 m-auto">
-         <div className="text-sm w-1/6">© Telif Hakkı 2022 </div>
-         <div className="text-sm w-1/6">Kullanım Koşulları</div>
-         <div className="text-sm w-1/6">KVK ve Gizlilik Politikası</div>
+         <div className="text-xs w-1/6 mr-1">© Telif Hakkı 2022-testwebsite.com</div>
+         <div className="text-xs w-1/6">Kullanım Koşulları</div>
+         <div className="text-xs w-1/6">KVK ve Gizlilik Politikası</div>
          <div className="w-1/6"></div>
          <div className="w-1/6"></div>
          <div className="flex items-center">

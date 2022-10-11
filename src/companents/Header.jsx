@@ -1,13 +1,14 @@
 import Search from "./Search";
 import flag from "../images/turkey-flag-icon.svg";
+import {Link} from 'react-router-dom';
 
 export default function Header() {
   return (
     <div className="w-full py-3 px-5 border-b-2 border-gray-50 ">
       <div className="flex items-center ">
-        <h2 className="text-4xl text-red font-extrabold w-32 cursor-pointer">
+        <Link to="/" className="text-4xl text-red font-extrabold w-32 cursor-pointer">
           LOGO
-        </h2>
+        </Link>
         <div className="flex items-center ">
           <span className="text-sm  mx-6  cursor-pointer">Mağazanı yarat</span>
           <span className="text-sm cursor-pointer">Yardım</span>
