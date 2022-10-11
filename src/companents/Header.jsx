@@ -5,7 +5,9 @@ export default function Header() {
   return (
     <div className="w-full py-3 px-5 border-b-2 border-gray-50 ">
       <div className="flex items-center ">
-        <h2 className="text-4xl text-red font-extrabold w-32 cursor-pointer">LOGO</h2>
+        <h2 className="text-4xl text-red font-extrabold w-32 cursor-pointer">
+          LOGO
+        </h2>
         <div className="flex items-center ">
           <span className="text-sm  mx-6  cursor-pointer">Mağazanı yarat</span>
           <span className="text-sm cursor-pointer">Yardım</span>
@@ -13,12 +15,17 @@ export default function Header() {
             <img src={flag} alt="" className="w-5 h-5 mx-1" />
             <span>Istanbul</span>
             <span className="border-x-2 px-1 mx-1">TR</span>
-            <div className="flex items-center cursor-pointer"><span>TRY </span><i className="fa-solid fa-chevron-down mx-1" style={{fontSize:'0.55rem'}}></i></div>
-            
+            <div className="flex items-center cursor-pointer">
+              <span>TRY </span>
+              <i
+                className="fa-solid fa-chevron-down mx-1 text-[0.55rem]"
+              
+              ></i>
+            </div>
           </div>
         </div>
 
-        <div style={{width: '35%'}}>
+        <div className="w-[35%]">
           <Search />
         </div>
 

@@ -26,3 +26,13 @@ body {
 .bg-red{
   background-color:rgba(255, 0, 0, 1);
 }
+
+.circle-icon{
+    width: 30px;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
