@@ -58,10 +58,10 @@ export default function Footer() {
           <div className="flex">
             <input
               type="text"
-              className="outline-0 border-0 px-3 py-3 rounded-sm"
+              className="outline-0 border-0 px-3 py-2 rounded-sm"
               placeholder="E-mail"
             />
-            <button className="bg-red text-white mx-2 px-5 py-3 rounded-sm">
+            <button className="bg-red text-white mx-2 px-5 py-2 rounded-sm">
               Abone ol
             </button>
           </div>
