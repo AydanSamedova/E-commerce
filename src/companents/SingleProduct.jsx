@@ -1,6 +1,7 @@
 import { useState } from "react";
 import price from "../images/price.svg";
 
+
 export default function SingleProduct({ image, discount, delivery }) {
   const [active, setActive] = useState(false);
   const handleClick = () => {
