@@ -1,12 +1,17 @@
 import Search from "./Search";
-import flag from "../images/turkey-flag-icon.svg";
-import {Link} from 'react-router-dom';
+import flag from "../images/flags/turkey-flag-icon.svg";
+import { Link } from "react-router-dom";
+
+
 
 export default function Header() {
   return (
     <div className="w-full py-3 px-5 border-b-2 border-gray-50 ">
       <div className="flex items-center ">
-        <Link to="/" className="text-4xl text-red font-extrabold w-32 cursor-pointer">
+        <Link
+          to="/"
+          className="text-4xl text-red font-extrabold w-32 cursor-pointer"
+        >
           LOGO
         </Link>
         <div className="flex items-center ">
@@ -18,10 +23,7 @@ export default function Header() {
             <span className="border-x-2 px-1 mx-1">TR</span>
             <div className="flex items-center cursor-pointer">
               <span>TRY </span>
-              <i
-                className="fa-solid fa-chevron-down mx-1 text-[0.55rem]"
-              
-              ></i>
+              <i className="fa-solid fa-chevron-down mx-1 text-[0.55rem]"></i>
             </div>
           </div>
         </div>
@@ -51,3 +53,24 @@ export default function Header() {
     </div>
   );
 }
+const Dropdownn = ({ label, value, options, onChange }) => {
+  return (
+    <label className="text-[#666666] text-sm font-normal">
+      {label}
+      <select
+        value={value}
+        onChange={onChange}
+        className="border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] outline-0 px-1 py-3"
+      >
+        {options.map((option) => (
+          <option
+            className="text-[#666666] text-sm font-normal"
+            value={option.value}
+          >
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+};

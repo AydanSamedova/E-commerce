@@ -1,8 +1,7 @@
-import productimg from "../images/Rectangle 364 (1).jpg";
 import { useState } from "react";
 import price from "../images/price.svg";
 
-export default function SingleProduct() {
+export default function SingleProduct({ image, discount, delivery }) {
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -18,18 +17,22 @@ export default function SingleProduct() {
             onClick={handleClick}
           ></i>
         </div>
-        <div className=" absolute uppercase text-center left-0 text-[10px] font-semibold  bottom-40 bg-red text-white py-[0.10rem] px-3 rounded-br-3xl">
-          Hızlı <br /> Teslimat
-        </div>
+        {delivery ? (
+          <div className=" absolute uppercase text-center left-0 text-[10px] font-semibold  bottom-40 bg-red text-white py-[0.10rem] px-3 rounded-br-3xl">
+            Hızlı <br /> Teslimat
+          </div>
+        ) : null}
 
-        <div className="absolute  text-sm left-2 font-black  top-2 text-white ">
-          <h3 className="absolute text-center py-1">50% indirim</h3>
+        {discount ? (
+          <div className="absolute  text-sm left-2 font-black  top-2 text-white ">
+            <h3 className="absolute text-center py-1">50% indirim</h3>
 
-          <img src={price} alt="" />
-        </div>
+            <img src={price} alt="" />
+          </div>
+        ) : null}
 
         <img
-          src={productimg}
+          src={image}
           alt="product"
           className="w-full h-full object-cover  rounded-md"
         />

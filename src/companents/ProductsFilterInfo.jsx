@@ -26,7 +26,7 @@ export default function ProductsFilterInfo() {
         <h3 className="text-sm font-semibold">Ürün sayı : </h3>{" "}
         <span className="text-red text-sm font-semibold"> 23234</span>
       </div>
-      <div className="w-[60%] flex ">
+      <div className="w-[55%] flex ">
         {keywords.map((keyword) => {
           return (
             <div
@@ -62,11 +62,11 @@ export default function ProductsFilterInfo() {
 }
 const Dropdownn = ({ label, value, options, onChange }) => {
   return (
-    <label>
+    <label className="text-[#666666] text-sm font-normal">
       {label}
-      <select value={value} onChange={onChange} className="border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] outline-0 p-2">
+      <select value={value} onChange={onChange} className="border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] outline-0 px-1 py-3">
         {options.map((option) => (
-          <option value={option.value}>{option.label}</option>
+          <option className="text-[#666666] text-sm font-normal" value={option.value}>{option.label}</option>
         ))}
       </select>
     </label>
