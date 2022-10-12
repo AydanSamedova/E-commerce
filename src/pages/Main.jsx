@@ -1,6 +1,7 @@
-import ProductsFilterInfo from "./ProductsFilterInfo";
-import Filter from "./Filter";
-import Products from "./Products";
+import ProductsFilterInfo from "../companents/ProductsFilterInfo";
+import Filter from "../companents/Filter";
+import Products from "../companents/Products";
+
 
 export default function Main() {
   return (

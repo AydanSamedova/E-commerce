@@ -2,8 +2,6 @@ import Search from "./Search";
 import flag from "../images/flags/turkey-flag-icon.svg";
 import { Link } from "react-router-dom";
 
-
-
 export default function Header() {
   return (
     <div className="w-full py-3 px-5 border-b-2 border-gray-50 ">
@@ -53,24 +51,4 @@ export default function Header() {
     </div>
   );
 }
-const Dropdownn = ({ label, value, options, onChange }) => {
-  return (
-    <label className="text-[#666666] text-sm font-normal">
-      {label}
-      <select
-        value={value}
-        onChange={onChange}
-        className="border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] outline-0 px-1 py-3"
-      >
-        {options.map((option) => (
-          <option
-            className="text-[#666666] text-sm font-normal"
-            value={option.value}
-          >
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </label>
-  );
-};
+

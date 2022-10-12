@@ -1,14 +1,25 @@
 import "./style/App.css";
-import Home from "./pages/Home";
+import Header from "./companents/Header";
+import Footer from "./companents/Footer";
+import Copyright from "./companents/Copyright";
+import Categories from "./companents/Categories";
+import Product from "./pages/Product";
+import Main from "./pages/Main";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Categories />
       <Routes>
-        <Route path="/" exact element={<Home />}></Route>
-        <Route path="*" element={<Home />} />
+        <Route path="/" exact element={<Main />}></Route>
+        <Route path="/product" exact element={<Product />}></Route>
+        <Route path="*" element={<Main />} />
       </Routes>
+      <Footer />
+      <Copyright />
     </div>
   );
 }
