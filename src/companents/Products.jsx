@@ -19,37 +19,23 @@ export default function Products() {
         </div>
         <div className="flex items-center justify-evenly bg-white rounded-lg border-[1px] mx-1 px-4 border-[#BBBBBB]">
           <h3 className="text-black text-xs font-semibold text-center py-3">
-          Bere
+            Bere
           </h3>
           <i className="fa-solid fa-xmark mx-2 text-[#BBBBBB] text-sm "></i>
         </div>
         <div className="flex items-center justify-evenly bg-white rounded-lg border-[1px] mx-1 px-4 border-[#BBBBBB]">
           <h3 className="text-black text-xs font-semibold text-center py-3">
-          Bluz
+            Bluz
           </h3>
           <i className="fa-solid fa-xmark mx-2 text-[#BBBBBB] text-sm "></i>
         </div>
-
       </div>
 
       <div className="w-full grid grid-cols-4 gap-4">
-       
-           
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-              <SingleProduct key={uniqid()} />
-                <SingleProduct key={uniqid()} />
-            
-          
-
-      
+        <SingleProduct key={uniqid()} />
+        <SingleProduct key={uniqid()} />
+        <SingleProduct key={uniqid()} />
+        <SingleProduct key={uniqid()} />
       </div>
     </div>
   );

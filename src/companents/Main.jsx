@@ -19,7 +19,7 @@ export default function Main() {
         <ProductsFilterInfo />
         <div className="flex my-3">
           <Filter />
-          <Products className="z-10" />
+          <Products  />
         </div>
       </div>
     </div>

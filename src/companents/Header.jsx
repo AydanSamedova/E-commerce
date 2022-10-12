@@ -40,7 +40,7 @@ export default function Header() {
             <h3 className="text-sm">Favorilerim</h3>
           </div>
           <div className="flex flex-col items-center relative cursor-pointer">
-            <i className="fa-solid fa-basket-shopping text-gray-300 text-xl"></i>{" "}
+            <i className="fa-solid fa-basket-shopping text-gray-300 text-xl"></i>
             <h3 className="text-sm">Sepetim</h3>
             <span className="bg-red text-white w-4 h-4 rounded-lg font-xs absolute right-0">
               <h6 className="text-xs text-center">2</h6>
