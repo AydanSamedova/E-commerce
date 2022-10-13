@@ -15,7 +15,7 @@ function App() {
       <Categories />
       <Routes>
         <Route path="/" exact element={<Main />}></Route>
-        <Route path="/product" exact element={<Product />}></Route>
+        <Route path="/product/:id" exact element={<Product />}></Route>
         <Route path="*" element={<Main />} />
       </Routes>
       <Footer />

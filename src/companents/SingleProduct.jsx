@@ -1,8 +1,9 @@
 import { useState } from "react";
 import price from "../images/price.svg";
+import {Link} from 'react-router-dom';
 
 
-export default function SingleProduct({ image, discount, delivery }) {
+export default function SingleProduct({ image, discount, delivery,id}) {
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -31,12 +32,14 @@ export default function SingleProduct({ image, discount, delivery }) {
             <img src={price} alt="" />
           </div>
         ) : null}
-
-        <img
+<Link to ={`/product/${id}`}>
+<img
           src={image}
           alt="product"
           className="w-full h-full object-cover  rounded-md"
         />
+</Link>
+
         {/* card hover */}
         <div className="card-hover opacity-0">
           <div className="search absolute text-white opacity-50 top-1/4 left-20">

@@ -1,4 +1,4 @@
-import uniqid from "uniqid";
+
 const gender = [
   { item: "erkek", stock: 3 },
   { item: "kadin", stock: 41 },
@@ -51,10 +51,10 @@ export default function Filter() {
         <h2 className="text-[#FF0000] text-base font-semibold my-1">
           Ilgili Kategoriler
         </h2>
-        {categories.map((categorie) => {
+        {categories.map((categorie, id) => {
           return (
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-normal my-1">{categorie.item}</h3>
+              <h3 className="text-sm font-normal my-1" key={id}>{categorie.item}</h3>
               <span className="text-[#696969] text-sm font-normal">
                 {categorie.stock}
               </span>
@@ -66,10 +66,10 @@ export default function Filter() {
         <h2 className="text-[#FF0000] text-base font-semibold my-1">
           Cinsiyet
         </h2>
-        {gender.map((element) => {
+        {gender.map((element, id) => {
           return (
             <div className="flex items-center justify-between">
-              <div className="flex">
+              <div className="flex" key={id}>
                 <input
                   type="checkbox"
                   className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
@@ -86,10 +86,10 @@ export default function Filter() {
       </div>
       <div className="border-b-2 border-[#EDEDED] my-2 py-2">
         <h2 className="text-[#FF0000] text-base font-semibold my-1">Beden</h2>
-        {size.map((element) => {
+        {size.map((element , id) => {
           return (
             <div className="flex items-center justify-between">
-              <div className="flex">
+              <div className="flex" key={id}>
                 <input
                   type="checkbox"
                   className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
@@ -108,10 +108,10 @@ export default function Filter() {
         <h2 className="text-[#FF0000] text-base font-semibold my-1">
           Yas Orani
         </h2>
-        {age.map((element) => {
+        {age.map((element, id) => {
           return (
             <div className="flex items-center justify-between">
-              <div className="flex">
+              <div className="flex" key={id}>
                 <input
                   type="checkbox"
                   className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
@@ -128,9 +128,9 @@ export default function Filter() {
       </div>
       <div className="border-b-2 border-[#EDEDED] my-2 py-2">
         <h2 className="text-[#FF0000] text-base font-semibold my-1">Renk</h2>
-        {colors.map((categorie) => {
+        {colors.map((categorie, id) => {
           return (
-            <div className="flex items-center ">
+            <div className="flex items-center " key={id}>
               <span
                 style={{ background: categorie.back }}
                 className="w-4 h-4 rounded-md mr-3"
@@ -163,10 +163,10 @@ export default function Filter() {
           <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-        {price.map((element) => {
+        {price.map((element, id) => {
           return (
             <div className="flex items-center ">
-              <div className="flex">
+              <div className="flex" key={id}>
                 <input
                   type="checkbox"
                   className="border-[#D7D7D7] border-[1px] rounded-md  mr-3 "

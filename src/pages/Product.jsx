@@ -4,7 +4,9 @@ import image3 from "../images/products/Rectangle 93.jpg";
 import img from "../images/products/400x600 - 1200x1800.jpg";
 import imagedetail from "../images/products/Rectangle 333.jpg";
 import imagedetail2 from "../images/products/Rectangle 336.jpg";
-import {useState} from 'react';
+import { useState, useContext, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { Cards } from "../service/Context";
 
 const images = [image1, image2, image3];
 const detailImage = [
@@ -16,30 +18,50 @@ const detailImage = [
   imagedetail2,
 ];
 export default function Product() {
-  const [active, setActive]= useState(false)
-  const handleChange=()=>{
-    setActive(!active)
-  }
+  const { cards } = useContext(Cards);
+  const [active, setActive] = useState(false);
+  const [product, setProduct] = useState([]);
+  const {id} = useParams();
+  //console.log(id);
+
+  useEffect(() => {
+    if (id){
+      cards?.map((o) => o?.id==id ?setProduct(o):null);
+    }
+  },[id]);
+
+   //console.log(product);
+
+  const handleChange = () => {
+    setActive(!active);
+  };
   return (
     <div className=" bg-[#cecece80] p-8">
       <div className="bg-white w-[80%] flex  m-auto p-6">
         <div className="flex">
           <div className="flex flex-col justify-center px-2">
             <button className="bg-white h-5 outline-0  shadow-md">
-              <i class="fa-solid fa-angle-up"></i>
+              <i className="fa-solid fa-angle-up"></i>
             </button>
             <div>
-              {images.map((image) => {
-                return <img src={image} alt="single" className="cursor-pointer" />;
+              {images.map((image, id) => {
+                return (
+                  <img
+                    src={image}
+                    alt="single"
+                    className="cursor-pointer"
+                    key={id}
+                  />
+                );
               })}
             </div>
             <button className="bg-white h-5 outline-0 shadow-md">
-              <i class="fa-solid fa-angle-down"></i>
+              <i className="fa-solid fa-angle-down"></i>
             </button>
           </div>
 
           <div className="singleimage mx-2 cursor-pointer">
-            <img src={img} alt="single " />
+            <img src={product.image} alt="single " className="h-full object-cover w-full" />
           </div>
         </div>
         <div className="w-full px-2">
@@ -90,12 +112,13 @@ export default function Product() {
                 {" "}
                 <h3 className="text-sm font-semibold my-2">Renk</h3>
                 <div className="flex">
-                  {detailImage.map((img) => {
+                  {detailImage.map((img, id) => {
                     return (
                       <img
                         src={img}
                         alt="clothes"
                         className="mr-3 rounded-md cursor-pointer"
+                        key={id}
                       />
                     );
                   })}
@@ -193,17 +216,22 @@ export default function Product() {
               <h3 className="text-[#A5A5A5]">Favori:</h3> <span>1923</span>
             </div>
           </div>
-          <div
-            className="grid gap-3 grid-cols-3 my-3"
-           
-          >
-          
+          <div className="grid gap-3 grid-cols-3 my-3">
             <button className="bg-[#0BC15C] rounded-2xl text-white text-base font-semibold py-2 cursor-pointer">
               Hemen Al
             </button>
-            <button onClick={handleChange}  className="flex items-center justify-center text-white text-base font-semibold rounded-2xl w-full py-2 cursor-pointer" style={active?{background:"#0BC15C"}:{background:"#FF0000"}}>
-            <i className="fa-solid fa-check mx-1" style={active?{display:"block"}:{display:"none"}}></i>
-              {active? "Sepetde !" : "Sepete ekle"}
+            <button
+              onClick={handleChange}
+              className="flex items-center justify-center text-white text-base font-semibold rounded-2xl w-full py-2 cursor-pointer"
+              style={
+                active ? { background: "#0BC15C" } : { background: "#FF0000" }
+              }
+            >
+              <i
+                className="fa-solid fa-check mx-1"
+                style={active ? { display: "block" } : { display: "none" }}
+              ></i>
+              {active ? "Sepetde !" : "Sepete ekle"}
             </button>
           </div>
         </div>
