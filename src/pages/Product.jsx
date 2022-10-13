@@ -1,7 +1,6 @@
 import image1 from "../images/products/Rectangle 292.jpg";
 import image2 from "../images/products/Rectangle 293.jpg";
 import image3 from "../images/products/Rectangle 93.jpg";
-import img from "../images/products/400x600 - 1200x1800.jpg";
 import imagedetail from "../images/products/Rectangle 333.jpg";
 import imagedetail2 from "../images/products/Rectangle 336.jpg";
 import { useState, useContext, useEffect } from "react";
@@ -18,11 +17,20 @@ const detailImage = [
   imagedetail2,
 ];
 export default function Product() {
+  const [value, setValue]=useState(1)
   const { cards } = useContext(Cards);
   const [active, setActive] = useState(false);
   const [product, setProduct] = useState([]);
   const {id} = useParams();
-  //console.log(id);
+
+  const increase = () => {
+    setValue(count => count + 1);
+  };
+ 
+
+  const decrease = () => {
+    setValue(count => count - 1);
+  };
 
   useEffect(() => {
     if (id){
@@ -30,7 +38,6 @@ export default function Product() {
     }
   },[id]);
 
-   //console.log(product);
 
   const handleChange = () => {
     setActive(!active);
@@ -173,16 +180,16 @@ export default function Product() {
                 </div>
               </div>
               <div>
-                <button className="bg-white rounded-tl-sm rounded-bl-sm  border-[1px] border-[#E6E6E6] py-2 px-3">
+                <button onClick={decrease} className="bg-white rounded-tl-sm rounded-bl-sm  border-[1px] border-[#E6E6E6] py-2 px-3">
                   -
                 </button>
 
                 <input
                   type="number"
-                  value="1"
+                  value={value}
                   className="outline-0 text-center border-[#E6E6E6] border-[1px] bg-[#E6E6E6] py-2"
                 />
-                <button className="bg-white rounded-tr-sm rounded-br-sm border-[1px] border-[#E6E6E6] py-2 px-3">
+                <button onClick={increase} className="bg-white rounded-tr-sm rounded-br-sm border-[1px] border-[#E6E6E6] py-2 px-3">
                   +
                 </button>
 
