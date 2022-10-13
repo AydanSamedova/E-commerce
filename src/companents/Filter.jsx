@@ -144,22 +144,22 @@ export default function Filter() {
         <h2 className="text-[#FF0000] text-base font-semibold my-1">
           Fiyat Araligi
         </h2>
-        <div className="flex my-3">
+        <div className="flex my-3 items-end justify-between">
           <div className="flex flex-col">
-            <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm">
+            <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm ">
               Min TL
             </label>
-            <input type="number" className="w-14 outline-0 border-[1px] border-[#E6E6E6]" />
-          
+            <input type="number" className="w-14 outline-0 border-[1px] border-[#E6E6E6] rounded-md py-1" />
           </div>
-
+          <span>-</span>
           <div className="flex flex-col">
-            <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm">
+            <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm ">
               Max TL
             </label>
-            <input className="w-14 outline-0 border-[1px] border-[#E6E6E6]" type="number" />
+            <input className="w-14 outline-0 border-[1px] rounded-md border-[#E6E6E6] py-1" type="number " />
           </div>
-          <button className="bg-red text-white ml-3">
+         
+          <button className="bg-red  text-white ml-3 rounded-md h-8 px-5">
           <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
@@ -169,7 +169,7 @@ export default function Filter() {
               <div className="flex">
                 <input
                   type="checkbox"
-                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
+                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3 "
                 />
               </div>
 
