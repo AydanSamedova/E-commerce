@@ -5,7 +5,7 @@ import Products from "../companents/Products";
 
 export default function Main() {
   return (
-    <div className="w-full bg-[#cecece80] z-0">
+    <div className="w-full bg-[#CECECE] z-0">
       <div className="w-[80%] m-auto">
         <div className="flex items-center justify-between py-4">
           <h2 className="text-lg font-semibold">Koton</h2>
@@ -18,7 +18,7 @@ export default function Main() {
           </div>
         </div>
         <ProductsFilterInfo />
-        <div className="flex my-3">
+        <div className="flex py-3">
           <Filter />
           <Products  />
         </div>

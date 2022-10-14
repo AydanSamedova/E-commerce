@@ -31,13 +31,6 @@ export const CardProvider = ({ children }) => {
         {id:11, image: image11, discount: false, delivery: false },
         {id:12, image: image12, discount: false, delivery: false },
       ]);
-  
-
-  
-
-   
-  
-   
 
 return <Cards.Provider value={{cards}}>{children}</Cards.Provider>;
 };
