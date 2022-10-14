@@ -1,4 +1,4 @@
-import { createContext , useState, useEffect} from "react";
+import { createContext , useState} from "react";
 import image from "../images/products/Rectangle 364 (13).jpg";
 import image1 from "../images/products/Rectangle 364 (1).jpg";
 import image2 from "../images/products/Rectangle 364 (2).jpg";

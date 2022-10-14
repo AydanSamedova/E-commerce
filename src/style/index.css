@@ -1,43 +1,42 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin:0;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Mukta', sans-serif;
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Pacifico', cursive;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Flex', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Roboto Serif', serif;
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Serif", serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-
-.text-red{
-  color:rgba(255, 0, 0, 1);
+.text-red {
+  color: rgba(255, 0, 0, 1);
 }
-.bg-red{
-  background-color:rgba(255, 0, 0, 1);
-}
-
-.circle-icon{
-    width: 30px;
-    color: white;
-    height: 30px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center
+.bg-red {
+  background-color: rgba(255, 0, 0, 1);
 }
 
-.card:hover .card-hover{
-opacity: 1;
-transition: all 0.4s ease;
+.circle-icon {
+  width: 25px;
+  color: white;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .card-hover {
+  opacity: 1;
+  transition: all 0.4s ease;
 }

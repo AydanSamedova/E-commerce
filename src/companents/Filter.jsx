@@ -72,7 +72,7 @@ export default function Filter() {
               <div className="flex" key={id}>
                 <input
                   type="checkbox"
-                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
+                  className="border-[#D7D7D7] border rounded-md  mr-3"
                 />
                 <h3 className="text-sm font-normal my-1">{element.item}</h3>
               </div>
@@ -92,7 +92,7 @@ export default function Filter() {
               <div className="flex" key={id}>
                 <input
                   type="checkbox"
-                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
+                  className="border-[#D7D7D7] border rounded-md  mr-3"
                 />
                 <h3 className="text-sm font-normal my-1">{element.item}</h3>
               </div>
@@ -114,7 +114,7 @@ export default function Filter() {
               <div className="flex" key={id}>
                 <input
                   type="checkbox"
-                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3"
+                  className="border-[#D7D7D7] border rounded-md  mr-3"
                 />
                 <h3 className="text-sm font-normal my-1">{element.item}</h3>
               </div>
@@ -149,18 +149,18 @@ export default function Filter() {
             <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm ">
               Min TL
             </label>
-            <input type="number" className="w-14 outline-0 border-[1px] border-[#E6E6E6] rounded-md py-1" />
+            <input type="number" className="w-14 outline-0 border border-[#E6E6E6] rounded-md py-1" />
           </div>
-          <span>-</span>
+          <span className="py-1">-</span>
           <div className="flex flex-col">
             <label htmlFor="" className="text-[#A5A5A5] font-normal text-sm ">
               Max TL
             </label>
-            <input className="w-14 outline-0 border-[1px] rounded-md border-[#E6E6E6] py-1" type="number " />
+            <input className="w-14 outline-0 border rounded-md border-[#E6E6E6] py-1" type="number " />
           </div>
          
           <button className="bg-red  text-white ml-3 rounded-md h-8 px-5">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
         {price.map((element, id) => {
@@ -169,7 +169,7 @@ export default function Filter() {
               <div className="flex" key={id}>
                 <input
                   type="checkbox"
-                  className="border-[#D7D7D7] border-[1px] rounded-md  mr-3 "
+                  className="border-[#D7D7D7] border rounded-md  mr-3 "
                 />
               </div>
 

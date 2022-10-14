@@ -75,8 +75,8 @@ export default function SingleProduct({ image, discount, delivery,id}) {
             </span>
           </div>
           <div className="flex items-center">
-            <span className="bg-[#F6E7D8] w-3 h-3 rounded-lg border-gray-400 border-[1px] mr-2"></span>
-            <span className="bg-[#EFDBDB] w-2 h-2 rounded-lg border-gray-400 border-[1px]"></span>
+            <span className="bg-[#F6E7D8] w-3 h-3 rounded-lg border-gray-400 border mr-2"></span>
+            <span className="bg-[#EFDBDB] w-2 h-2 rounded-lg border-gray-400 border"></span>
           </div>
         </div>
       </div>

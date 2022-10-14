@@ -32,7 +32,7 @@ export default function ProductsFilterInfo() {
             <div
               key={uniqid()}
               onClick={() => setActive(keyword)}
-              className=" border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] "
+              className="border rounded-lg mx-1 border-[#C4C4C4B2] "
               style={
                 active === keyword
                   ? { borderColor: "rgba(255, 0, 0, 1)" }
@@ -64,7 +64,7 @@ const Dropdownn = ({ label, value, options, onChange }) => {
   return (
     <label className="text-[#666666] text-sm font-normal">
       {label}
-      <select value={value} onChange={onChange} className="border-[1px] rounded-lg mx-1 border-[#C4C4C4B2] outline-0 px-1 py-3">
+      <select value={value} onChange={onChange} className="border rounded-lg mx-1 border-[#C4C4C4B2] outline-0 px-1 py-3">
         {options.map((option, id) => (
           <option className="text-[#666666] text-sm font-normal" key={id} value={option.value}>{option.label}</option>
         ))}

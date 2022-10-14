@@ -22,7 +22,7 @@ export default function Navigation() {
       <div className="grid grid-cols-5 px-4">
         {btns.map((btn) => {
           return (
-            <button className="text-base font-semibold  text-red hover:text-white bg-white hover:bg-[#FF0000] border-[1px] border-[#FF0000] hover:border-0 text-red rounded-md py-2 mr-5 transition-all">
+            <button className="text-base font-semibold  text-red hover:text-white bg-white hover:bg-[#FF0000] border border-[#FF0000] hover:border-0 text-red rounded-md py-2 mr-5 transition-all">
               {btn}
             </button>
           );

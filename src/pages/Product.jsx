@@ -43,7 +43,7 @@ export default function Product() {
     setActive(!active);
   };
   return (
-    <div className=" bg-[#cecece80] p-8">
+    <div className=" bg-[#cecece80] p-8 ">
       <div className="bg-white w-[80%] flex  m-auto p-6">
         <div className="flex">
           <div className="flex flex-col justify-center px-2">
@@ -67,7 +67,7 @@ export default function Product() {
             </button>
           </div>
 
-          <div className="singleimage mx-2 cursor-pointer">
+          <div className="singleimage mx-2 cursor-pointer py-4">
             <img src={product.image} alt="single " className="h-full object-cover w-full" />
           </div>
         </div>
@@ -180,16 +180,16 @@ export default function Product() {
                 </div>
               </div>
               <div>
-                <button onClick={decrease} className="bg-white rounded-tl-sm rounded-bl-sm  border-[1px] border-[#E6E6E6] py-2 px-3">
+                <button onClick={decrease} className="bg-white rounded-tl-sm rounded-bl-sm  border border-[#E6E6E6] py-2 px-3">
                   -
                 </button>
 
                 <input
                   type="number"
                   value={value}
-                  className="outline-0 text-center border-[#E6E6E6] border-[1px] bg-[#E6E6E6] py-2"
+                  className="outline-0 text-center border-[#E6E6E6] border bg-[#E6E6E6] py-2"
                 />
-                <button onClick={increase} className="bg-white rounded-tr-sm rounded-br-sm border-[1px] border-[#E6E6E6] py-2 px-3">
+                <button onClick={increase} className="bg-white rounded-tr-sm rounded-br-sm border border-[#E6E6E6] py-2 px-3">
                   +
                 </button>
 

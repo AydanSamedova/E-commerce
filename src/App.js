@@ -1,4 +1,4 @@
-import "./style/App.css";
+
 import Header from "./companents/Header";
 import Footer from "./companents/Footer";
 import Copyright from "./companents/Copyright";

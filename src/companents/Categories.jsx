@@ -22,19 +22,26 @@ const keywords = [
 export default function Categories() {
   const [active, setActive] = useState("Kadın");
   const [menu, setMenu] = useState(false)
+  const [open, setOpen] = useState(false)
+
   const menuClick=()=>{
     setMenu(!menu)
+    setOpen (!open)
   }
+
   const handleClick = (value) => {
     setActive(value);
   };
+
+  const menuClass= open? "fa-solid fa-xmark" : 'fa-solid fa-bars'
   return (
-    <div className="flex w-full py-3 px-5 relative  items-center justify-between">
+    <div className="flex w-full py-3 px-5  items-center justify-between">
       <div
-        className="border-[1px] border-slate-50 rounded-md mr-4"
+        className="border border-slate-50 rounded-md mr-4"
         style={{ boxShadow: "0px 3px 7px rgba(217, 7, 9, 0.2)" }}
       >
-        <i className="fa-solid fa-bars text-red p-2" onClick={menuClick}></i>
+        
+        <i className={`${menuClass} text-red p-2`} onClick={menuClick}></i>
       </div>
       {menu?  < SubMenu />: null}
      
